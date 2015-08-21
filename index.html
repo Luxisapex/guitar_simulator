@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type='text/css' rel='stylesheet' href='stylesheet.css'/>
+	<title>Luxis's guitar simulator</title>
+</head>
+<body>
+	<h1>Bootstrap landing</h1>
+	<div id='major'>
+		<input type='button' class='tone' value='A' id='amajor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='B' id='bmajor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='C' id='cmajor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='D' id='dmajor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='E' id='emajor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='F' id='fmajor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='G' id='gmajor' draggable='true' ondragstart='drag(event)'>
+	</div>
+	<div id='minor'>
+		<input type='button' class='tone' value='Am' id='aminor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='Bm' id='bminor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='Cm' id='cminor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='Dm' id='dminor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='Em' id='eminor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='Fm' id='fminor' draggable='true' ondragstart='drag(event)'>
+		<input type='button' class='tone' value='Gm' id='gminor' draggable='true' ondragstart='drag(event)'>
+	</div>
+	<img src='' id='guitar' alt='Guitar' ondrop='drop(event)' ondragover='allowDrop(event)'/>
+	<div id='chords'></div>
+	<div id='playDiv'>
+		<input type='text' id='delay' placeholder='1000ms'>
+		<input type='button' id='play' value='Play'>
+	</div>
+	<script src='custom.js'></script>
+</body>
+</html>
